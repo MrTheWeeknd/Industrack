@@ -1,13 +1,16 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navbar } from "./core/components/navbar/navbar";
+import { Titulo } from "./core/components/titulo/titulo";
+import { ListCard } from "./core/components/list-card/list-card";
+import { Card } from './core/components/card/card';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar],
+  imports: [RouterOutlet, Card, Navbar, ListCard],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
+export class App  {
   protected readonly title = signal('Industrack');
 }
