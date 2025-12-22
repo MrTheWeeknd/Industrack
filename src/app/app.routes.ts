@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { Navbar } from './core/components/navbar/navbar';
- HEAD
+main
+HEAD
 import { ListCard } from './core/components/list-card/list-card';
 import { Historico } from './pages/historico/historico';
 
@@ -13,4 +14,11 @@ export const routes: Routes = [
 export const routes: Routes = [
     {path: "", component: Navbar, title: "Home"}
  ac9237a3974dfda9dd1d273ff5561f6f7ae6ce4c
+
+import { ListCard } from './core/components/list-card/list-card';
+
+export const routes: Routes = [
+    {path: "", component: Navbar, title: "Home"},
+    {path: "estoque", component: ListCard}
+main
 ];
