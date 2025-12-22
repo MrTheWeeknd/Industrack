@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { Titulo } from "../titulo/titulo";
-import { Card } from "../card/card";
 import { CommonModule } from '@angular/common';
-import { TableHead } from "../table-head/table-head";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-list-card',
-  imports: [Titulo, Card, CommonModule, TableHead],
+  imports: [CommonModule, RouterLink],
   templateUrl: './list-card.html',
   styleUrl: './list-card.css',
 })

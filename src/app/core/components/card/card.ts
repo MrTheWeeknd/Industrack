@@ -10,7 +10,6 @@ export class Card implements OnInit {
   @Input() produto: any;
 
   ngOnInit(): void {
-    console.log(this.produto)
   }
 
 }

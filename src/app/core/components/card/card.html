@@ -1,23 +1,23 @@
 <div class="grid grid-cols-4 gap-4 px-6 py-4 bg-white border-b border-gray-200 items-center hover:bg-gray-50">
     
-    <div class="font-bold text-gray-900">
+    <div class="text-base text-gray-900">
         {{produto.nome}}
     </div>
     
     <div>
-        <span class="{{produto.qtdAtual <= produto.qtdMin ? 'text-red-600 font-bold' : 'text-gray-600'}}">
+        <span class="text-base {{produto.qtdAtual <= produto.qtdMin ? 'text-red-600 font-semibold' : 'text-gray-900'}}">
             {{produto.qtdAtual}}
         </span>
     </div>
     
     <div>
-        <span class="{{produto.qtdAtual <= produto.qtdMin ? 'text-red-600 font-bold' : 'text-gray-600'}}">
+        <span class="text-base {{produto.qtdAtual <= produto.qtdMin ? 'text-red-600 font-semibold' : 'text-gray-900'}}">
             {{produto.qtdMin}}
         </span>
     </div>
 
     <div class="flex gap-3">
-        <button class="text-blue-600 hover:underline cursor-pointer font-medium text-sm">Ver</button>
-        <button class="text-amber-600 hover:underline cursor-pointer font-medium text-sm">Editar</button>
+        <button class="text-blue-600 hover:underline cursor-pointer font-medium text-base">Ver</button>
+        <button class="text-amber-600 hover:underline cursor-pointer font-medium text-base">Editar</button>
     </div>
 </div>
